@@ -1,3 +1,8 @@
+@import './styles/base.css';
+@import './styles/components.css';
+@import './styles/layouts.css';
+@import './styles/sections.css';
+
 :root {
     --orange-400: hsl(12, 88%, 59%);
     --blue-950: hsl(228, 39%, 23%);
