@@ -13,7 +13,7 @@
 
     --be-vietnam-pro: 'Be Vietnam Pro', sans-serif;
 
-    font: normal 400 1rem var(--be-vietnam-pro);
+    font: normal 400 1rem/1.5 var(--be-vietnam-pro);
     background: var(--gray-50);
 }
 
@@ -56,11 +56,9 @@ picture {
 .container {
     width: 100%;
     padding-inline: 1.5rem;
-
-
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 60rem) {
     .container {
         max-width: 69.375rem;
         margin-inline: auto;
