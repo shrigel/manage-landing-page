@@ -58,7 +58,7 @@ picture {
     padding-inline: 1.5rem;
 }
 
-@media (min-width: 60rem) {
+@media (min-width: 56rem) {
     .container {
         max-width: 69.375rem;
         margin-inline: auto;

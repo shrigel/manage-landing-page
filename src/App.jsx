@@ -3,6 +3,7 @@ import Button from './components/ui/Button'
 import Logo from './components/ui/Logo'
 import NavBar from './components/layout/Navbar'
 import HeroSection from './components/sections/HeroSection'
+import FeatureSection from './components/sections/FeatureSection'
 
 function App() {
 	return (
@@ -10,6 +11,7 @@ function App() {
 			<NavBar />
 			<main>
 				<HeroSection />
+				<FeatureSection />
 			</main>
 		</>
 	)
