@@ -1,6 +1,9 @@
 /* Hero Section */
 .hero {
     padding-top: 2.5rem;
+}
+
+.hero__container {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -22,6 +25,9 @@
 /* Features Section */
 .features {
     padding-top: 2.5rem;
+}
+
+.features__container {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -80,6 +86,9 @@
     .hero {
         margin-block-start: 2.5rem;
         padding-block: 2.5rem;
+    }
+
+    .hero__container {
         flex-direction: row-reverse;
         align-items: center;
     }
@@ -106,6 +115,9 @@
     /* Features Section */
     .features {
         padding-block: 2.5rem;
+    }
+
+    .features__container {
         flex-direction: row;
     }
 
