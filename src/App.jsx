@@ -1,9 +1,7 @@
-import Container from './components/ui/Container'
-import Button from './components/ui/Button'
-import Logo from './components/ui/Logo'
 import NavBar from './components/layout/NavBar'
 import HeroSection from './components/sections/HeroSection'
 import FeatureSection from './components/sections/FeatureSection'
+import TestimonialsSection from './components/sections/TestimonialsSection'
 
 function App() {
 	return (
@@ -12,6 +10,7 @@ function App() {
 			<main>
 				<HeroSection />
 				<FeatureSection />
+				<TestimonialsSection />
 			</main>
 		</>
 	)
