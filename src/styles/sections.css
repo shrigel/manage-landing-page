@@ -161,6 +161,9 @@
 .cta {
     margin-block-start: 2.5rem;
     background-color: var(--orange-400);
+    background-image: url('../images/bg-simplify-section-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
 }
 
 .cta__container {
@@ -269,6 +272,11 @@
     }
 
     /* CTA Section */
+    .cta {
+        background-image: url('../images/bg-simplify-section-desktop.svg');
+        background-position: center left;
+    }
+
     .cta__container {
         flex-direction: row;
         justify-content: space-between;

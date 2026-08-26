@@ -28,6 +28,10 @@ body {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+    background-image: url('./images/bg-tablet-pattern.svg'), url('./images/bg-tablet-pattern.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: top -3rem right -5rem, bottom 30% left -15rem;
+    background-size: 25rem auto, 25rem auto;
 }
 
 a {
@@ -58,6 +62,11 @@ picture {
 }
 
 @media (min-width: 56rem) {
+    body {
+        background-position: top -6rem right -5rem, bottom 30% left -17.5rem;
+        background-size: 45rem auto, 40rem auto;
+    }
+
     .container {
         max-width: 69.375rem;
         margin-inline: auto;
