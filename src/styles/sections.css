@@ -157,6 +157,27 @@
     margin-block-start: 2rem;
 }
 
+/* CTA Section */
+.cta {
+    margin-block-start: 2.5rem;
+    background-color: var(--orange-400);
+}
+
+.cta__container {
+    padding-block: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.cta__title {
+    text-align: center;
+    font-size: 2.3rem;
+    line-height: 1.2;
+    color: var(--gray-50);
+}
+
 @media (min-width: 56rem) {
 
     /* Hero Section */
@@ -245,5 +266,17 @@
 
     .testimonials__dots {
         display: none;
+    }
+
+    /* CTA Section */
+    .cta__container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .cta__title {
+        text-align: left;
+        font-size: 2.5rem;
+        max-width: 35rem;
     }
 }
