@@ -24,14 +24,16 @@ export default function Footer() {
 
                 <form onSubmit={handleSubmit} noValidate className="footer__input">
                     <div className="footer__form-group">
-                        <input className="footer__input-email" type="email" id="email" value={email}
+                        <label htmlFor="email" className="visually-hidden">Email</label>
+                        <input className="footer__input-email" type="email" id="email" name="email" value={email}
                             onChange={(e) => {
                                 setEmail(e.target.value);
                                 if (errorMessage) setErrorMessage('');
                             }} placeholder="Updates in your inbox..."
-                            aria-invalid={errorMessage ? "true" : "false"} />
+                            aria-invalid={errorMessage ? "true" : "false"}
+                            aria-describedby={errorMessage ? 'email-error' : undefined} />
                         {errorMessage && (
-                            <span className="footer__error-message" role="alert">
+                            <span className="footer__error-message" id="email-error" role="alert">
                                 {errorMessage}
                             </span>
                         )}

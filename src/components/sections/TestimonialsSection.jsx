@@ -22,7 +22,7 @@ export default function TestimonialsSection() {
                 <div className="testimonials__slide">
                     {testimonialsData.map((testi) => (
                         <div className="testimonials__card" key={testi.id}>
-                            <img className="testimonials__avatar" src={testi.avatar} alt={testi.name} />
+                            <img className="testimonials__avatar" src={testi.avatar} alt="" />
                             <h3 className="testimonials__name">{testi.name}</h3>
                             <p className="testimonials__quote">{testi.quote}</p>
                         </div>
@@ -36,6 +36,8 @@ export default function TestimonialsSection() {
                         key={index}
                         className={`testimonials__dot ${selectedIndex === index ? 'testimonials__dot--active' : ''}`}
                         onClick={() => emblaApi?.scrollTo(index)}
+                        aria-label={`Show testimonial from ${testimonialsData[index].name}`}
+                        aria-current={selectedIndex === index}
                     />
                 ))}
             </div>
